@@ -54,4 +54,4 @@ export function VerificationEmail({ username, otp }: VerificationEmailProps) {
   );
 }
 
-export default Email;
+export default VerificationEmail;
