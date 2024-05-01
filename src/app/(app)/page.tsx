@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -24,8 +24,11 @@ export default function Home() {
               <CarouselItem key={index}>
               <div className="p-1">
                 <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
+                  <CardHeader>
+                    {message.title}
+                  </CardHeader>
+                  <CardContent className="flex aspect-square items-center justify-center px-6">
+                    <span className="text-2xl font-semibold">{message.content}</span>
                   </CardContent>
                 </Card>
               </div>
